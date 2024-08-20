@@ -101,228 +101,227 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className='featured' id='featured'> 
+      <section className='mb-10' id='featured'> 
         <h1 className='text-center mb-8 relative before:content-[""] before:absolute before:top-1/2 before:left-0 before:w-full before:h-[.1rem] before:bg-gray-800 before:-translate-y-1/2 before:z-[-1]'>
           <span className='text-3xl py-2 px-8 text-black bg-white border-black'>Featured Books</span>
         </h1>
         <div className='featured-slider'>
           <Swiper
             spaceBetween={30}
-            slidesPerView={3}
+            slidesPerView={4.5}
             navigation
             pagination={{ clickable: true }}
             modules={[Navigation, Pagination]}
             className="mySwiper"
           >
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
                 <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
                   <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                   <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                   <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
                 <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                  <img src={book1} className='h-100 max-h-full max-w-full object-cover' alt=''/>
+                  <img src={book1} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
                 </div>
-                <div className='bg-white p-6'>
-                  <h3 className='text-black text-2xl'>featured books</h3>
-                  <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book2} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book2} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book3} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book3} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book4} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book4} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book5} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book5} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book7} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book7} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book8} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book8} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book9} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book9} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book10} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book10} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book11} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book11} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book12} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book12} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className='w-[25rem] my-8 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
-                  <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
-                    <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                    <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
-                  </div>
-                  <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
-                    <img src={book13} className='h-100 max-h-full max-w-full object-cover' alt=''/>
-                  </div>
-                  <div className='bg-white p-6'>
-                    <h3 className='text-black text-2xl'>featured books</h3>
-                    <div className='text-4xl text-black pt-6'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
-                    <a href='#' className='rounded-full text-white bg-red-700 px-4 py-4 justify-center text-[1.4rem]'>add to cart</a>
-                  </div>
+              <div className='ml-10 w-[18rem] h-[30rem] my-2 relative overflow-hidden border border-gray-500 text-center hover:border-red-500'>
+                <div className='transform -translate-y-full absolute inset-x-0 top-0 bg-white border-b border-gray-500 z-10 hover:transform translate-y-0'>
+                  <a href='#' className='fas fa-search text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-heart text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
+                  <a href='#' className='fas fa-eye text-black text-4xl py-4 px-6 hover:bg-red-700 hover:text-white'></a>
                 </div>
-            </SwiperSlide>
+                <div className='p-4 bg-gradient-to-br from-gray-200 to-white'>
+                  <img src={book13} className='h-80 w-72 max-h-full max-w-full object-cover' alt=''/>
+                </div>
+                <div className='bg-white p-0'>
+                  <h3 className='text-black text-xl'>Price</h3>
+                  <div className='text-2xl text-black pt-0 pb-4'>N1500<span className='text-xl line-through text-black'>N2000</span></div>
+                  <a href='#' className='rounded-full text-white bg-red-700 px-4 py-3 justify-center text-[1.4rem]'>add to cart</a>
+                </div>
+              </div>
+            </SwiperSlide>  
           </Swiper>
         </div>
       </section>
-
-      /**Newsletter section begins */
+      
       <section className='bg-gray-400 bg-cover bg-center bg-fixed'>
         <form action='' className='max-w-[45rem] m-auto text-center py-[5rem]'>
           <h3 className='text-3xl text-white pb-2 font-normal'>Subscribe for latest updates</h3>

@@ -26,9 +26,9 @@ const Navbar = () => {
 
         <div className="flex items-center text-4xl ml-1 text-black cursor-pointer space-x-4">
           <div className="fas fa-search md:hidden cursor-pointer" onClick={toggleMenu}></div>
-          <a href="/favourites" className="fas fa-heart cursor-pointer"></a>
-          <a href="/shoppingcart" className="fas fa-shopping-cart cursor-pointer"></a>
-          <a href="/login" className="fas fa-user cursor-pointer"></a>
+          <Link to="/favourites" className="fas fa-heart cursor-pointer"></Link>
+          <Link to="/cart" className="fas fa-shopping-cart cursor-pointer"></Link>
+          <Link to="/login" className="fas fa-user cursor-pointer"></Link>
         </div>
       </div>
 
