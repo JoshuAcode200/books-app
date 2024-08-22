@@ -11,6 +11,7 @@ import Signup from './Components/Sign-Up/signup.jsx';
 import Cart from './Components/Cart/cart.jsx';
 import { CartProvider, useCarts } from './CartContext.js'; // Import useCarts
 import Checkout from './Components/Checkout/checkout.jsx';
+import Footer from './Components/Footer/footer.jsx';
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function AppContent() {
         <Route exact path='/cart' element={<Cart />} />
         <Route exact path='/checkout' element={<Checkout />} />
       </Routes>
+      <Footer />
+
     </div>
   );
 }
